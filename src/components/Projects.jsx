@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col gap-10 p-4 md:py-7 xl:py-10 md:px-[30px] lg:px-[90px] xl:px-[165px]"
+      className="flex flex-col gap-10 px-4 py-20 md:py-7 xl:py-10 md:px-[30px] lg:px-[90px] xl:px-[165px]"
     >
       <div className="flex flex-row justify-between border-t-2 py-20 items-end">
         <h2 className="text-[40px] md:text-[72px] xl:text-[88px] text-white font-bold leading-10 tracking-[-1.136px]">

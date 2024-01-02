@@ -23,7 +23,7 @@ const NavBar = ({ bg }) => {
                 src={elem}
                 alt="social icon"
                 key={index}
-                className="w-5 cursor-pointer lg:hover:scale-110 duration-200"
+                className={`w-5 cursor-pointer lg:hover:scale-110 duration-200`}
               ></img>
             );
           })}
