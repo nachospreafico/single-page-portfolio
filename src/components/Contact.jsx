@@ -38,7 +38,9 @@ const Contact = () => {
             <input
               type="text"
               placeholder="NAME"
-              className="border-b-2 py-4 px-6 bg-transparent w-full text-white"
+              className={`border-b-2 py-4 px-6 bg-transparent w-full text-white ${
+                formInputs.name.trim() === "" && "border-[tomato]"
+              }`}
               onChange={(e) =>
                 setFormInputs((prevState) => {
                   return { ...prevState, name: e.target.value };
@@ -74,7 +76,12 @@ const Contact = () => {
             <textarea
               rows={3}
               placeholder="MESSAGE"
-              className="border-b-2 py-4 px-6 bg-transparent w-full text-white"
+              className={`border-b-2 py-4 px-6 bg-transparent w-full text-white ${
+                formInputs.message.trim() === "" ||
+                formInputs.message.length < 20
+                  ? "border-[tomato]"
+                  : null
+              }`}
               onChange={(e) =>
                 setFormInputs((prevState) => {
                   return { ...prevState, message: e.target.value };
