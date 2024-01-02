@@ -8,7 +8,9 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <div className="relative">
-      <NavBar />
+      <header>
+        <NavBar />
+      </header>
       <Hero />
       <Skills />
       <Projects />
