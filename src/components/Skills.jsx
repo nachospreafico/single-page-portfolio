@@ -1,7 +1,7 @@
 const SkillItem = ({ title, exp }) => {
   return (
-    <div className="flex flex-col gap-2 items-start">
-      <h2 className="text-[32px] md:text-[48px]  text-white font-bold md:text-left leading-10 md:leading-[56px] tracking-[-1px] md:tracking-[-1.5px]">
+    <div className="flex flex-col gap-2 items-center md:items-start">
+      <h2 className="text-[32px] md:text-[48px]   text-white font-bold md:text-left leading-10 md:leading-[56px] tracking-[-1px] md:tracking-[-1.5px]">
         {title}
       </h2>
       <p className="text-[#D9D9D9] font-medium leading-6 ">{exp}</p>
